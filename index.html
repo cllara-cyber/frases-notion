@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Frase Aleatória</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: #ffffff; /* fundo branco puro */
+      color: #333;
+      text-align: center;
+      font-size: 1.1em; /* menor ainda */
+      padding: 10px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="frase"></div>
+
+  <script>
+    const frases = [
+      "Um pequeno passo feito com intenção constrói universos.",
+      "O que eu planto hoje, amanhã me acolherá.",
+      "Foco é um presente que dou ao meu futuro.",
+      "Eu acolho a imperfeição e sigo em frente.",
+      "Cada ação consciente fortalece minhas raízes.",
+      "Eu sou capaz de criar clareiras de calma dentro do caos.",
+      "Avançar um milímetro ainda é avançar."
+    ];
+
+    const aleatoria = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById("frase").textContent = aleatoria;
+  </script>
+</body>
+</html>
